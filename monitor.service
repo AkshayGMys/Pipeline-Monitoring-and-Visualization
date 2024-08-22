@@ -1,0 +1,15 @@
+[Unit]
+Description=Monitoring Service
+After=network.target
+
+[Service]
+User=#Enter a valid user name
+Group=#Enter a valid group name that the user belong to
+WorkingDirectory=#Enter the absolute path to the directory where the app.py is present
+Environment="PATH=/usr/local/bin" #Enter a valid absolute path to the bin here
+ExecStart=/usr/bin/python #Enter the absolute path to app.py after the python path
+Restart=always
+Type=simple
+
+[Install]
+WantedBy=multi-user.target

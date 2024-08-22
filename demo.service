@@ -1,0 +1,15 @@
+[Unit]
+Description=Monitoring Service
+After=network.target
+
+[Service]
+User=chinmaihk
+Group=wheel
+WorkingDirectory=/home/chinmaihk/monitoring_system
+Environment="PATH=/usr/local/bin"
+ExecStart=/usr/bin/python /home/chinmaihk/monitoring_system/app.py
+Restart=always
+Type=notify
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,5 @@
+kafka:
+  - "/etc/kafka/topic_1"
+  - "/etc/kafka/topic_2"
+  - "/etc/kafka/topic_3"
+  - "/etc/kafka/topic_4"
